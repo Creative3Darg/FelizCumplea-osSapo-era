@@ -1,0 +1,137 @@
+/* Estilos generales y fondo animado */
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(-45deg, #f8cdda, #d8a8e8, #a8d8f8, #a8f8d8);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título principal */
+.main-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    color: #d63384;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Texto de introducción */
+.main-text {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Cuadrícula de botones */
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+/* Estilo de los botones */
+.day-button {
+    background-color: #e83e8c;
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(232, 62, 140, 0.4);
+}
+
+.day-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #d63384;
+    box-shadow: 0 6px 20px rgba(214, 51, 132, 0.5);
+}
+
+/* --- Estilos para las páginas de cada día --- */
+
+.day-container {
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.day-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+.day-text {
+    font-size: 1.3em;
+    line-height: 1.6;
+    text-align: justify;
+    color: #444;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #6c757d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+.play-music-button {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.play-music-button:hover {
+    transform: scale(1.05);
+    background-color: #e83e8c;
+}

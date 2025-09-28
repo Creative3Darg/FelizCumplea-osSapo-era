@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 3</title> <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio src="audio/dia3.mp3" id="musicaFondo" loop></audio>
+    <div class="container day-container">
+
+        <img src="img/3.jpg" alt="Recuerdo del día 1" class="day-image">
+
+        <button id="playButton" class="play-music-button">🎵 Ey sapoñera, dame click 🎵</button>
+
+<p class="day-text">
+     No olvides reproducir la cancion te conozco uwu 
+</p>
+
+        <p class="day-text">
+            Hoy pensé en ti con alegría.
+Imaginé tu sonrisa iluminando cualquier lugar donde estés, y fue imposible no contagiarme de esa energía con la que siempre estabas conmigo en llamada
+Hay algo en ti que convierte lo sencillo en especial, como si tu sola presencia pintara de colores los días grises o verdes como tu color favorito.
+Hoy, al pensarte, sentí paz… y eso me recordó que eres una de las razones por las que valia la pena sonreír sapoñera.
+        </p>
+
+        <a href="index.html" class="back-button">Volver a la página principal</a>
+
+    </div>
+    <script>
+    const playButton = document.getElementById('playButton');
+    const audio = document.getElementById('musicaFondo');
+
+    playButton.addEventListener('click', () => {
+        audio.play();
+        playButton.style.display = 'none'; // Oculta el botón después de usarlo
+    });
+</script>
+</body>
+</html>

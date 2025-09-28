@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 15</title> <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio src="audio/dia15.mp3" id="musicaFondo" loop></audio>
+    <div class="container day-container">
+
+        <img src="img/5.jpg" alt="Recuerdo del día 1" class="day-image">
+
+        <button id="playButton" class="play-music-button">🎵 Ey sapoñera, dame click 🎵</button>
+
+<p class="day-text">
+     No olvides reproducir la cancion te conozco uwu 
+</p>
+
+        <p class="day-text">
+         Hoy pensé en ti… y sentí que como la cancion, ojala entre nosotros las lagrimas se pudieran evitar... no pelear tanto 
+         y capaz haber afrontado de otra manera las situaciones pero ey. esto no es sobre nosotros, es SOBRE TI! TEAMOOOO DIA 15 PENSANDO EN TI 
+         QUEDTE Y TE DAREEE LO QUE ME QUEDA DE SUEÑO TE DAREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE (88)
+        </p>
+
+        <a href="index.html" class="back-button">Volver a la página principal</a>
+
+    </div>
+    <script>
+    const playButton = document.getElementById('playButton');
+    const audio = document.getElementById('musicaFondo');
+
+    playButton.addEventListener('click', () => {
+        audio.play();
+        playButton.style.display = 'none'; // Oculta el botón después de usarlo
+    });
+</script>
+</body>
+</html>

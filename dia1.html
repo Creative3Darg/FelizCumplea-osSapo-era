@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 1</title> <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio src="audio/dia1.mp3" id="musicaFondo" loop></audio>
+    <div class="container day-container">
+
+        <img src="img/dia1.jpg" alt="Recuerdo del día 1" class="day-image">
+
+        <button id="playButton" class="play-music-button">🎵 Ey sapoñera, dame click 🎵</button>
+
+<p class="day-text">
+     No olvides reproducir la cancion te conozco uwu 
+</p>
+
+        <p class="day-text">
+            Hoy abrí este diario contigo en la mente.
+Me detuve a pensar en lo increíble que es que alguien pueda llenar tanto mis días con solo existir. con solo una llamada poder sentirme tan cerca de ti.
+No sé si lo sabés, pero incluso en los silencios, en los momentos en que no hablamos, sigues estando presente sapoñera... mi sapoñera...
+Hoy empiezo este recorrido de 25 días, y el primero lo dedico a agradecer por ti, por lo que fuimos, lo que somos y lo que aún siento....
+        </p>
+
+        <a href="index.html" class="back-button">Volver a la página principal</a>
+
+    </div>
+    <script>
+    const playButton = document.getElementById('playButton');
+    const audio = document.getElementById('musicaFondo');
+
+    playButton.addEventListener('click', () => {
+        audio.play();
+        playButton.style.display = 'none'; // Oculta el botón después de usarlo
+    });
+</script>
+</body>
+</html>
